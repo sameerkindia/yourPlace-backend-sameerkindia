@@ -1,7 +1,9 @@
 const fs = require("fs");
 const path = require("path");
 
-const dotenv = require("dotenv").config();
+const dotenv = require("dotenv").config({ path: "./config.env" });
+
+console.log(dotenv);
 
 const express = require("express");
 const bodyParser = require("body-parser");
